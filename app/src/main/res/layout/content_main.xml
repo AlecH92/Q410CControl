@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tinkermotion.q410ccontrol.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth LED"
+        android:id="@+id/switchBT"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WiFi LED"
+        android:id="@+id/switchWIFI"
+        android:layout_below="@+id/switchBT"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/switchBT"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED4"
+        android:id="@+id/switchBoot"
+        android:layout_below="@+id/switchled3"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/switchled3"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED1"
+        android:id="@+id/switchled1"
+        android:layout_below="@+id/switchWIFI"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/switchWIFI"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED2"
+        android:id="@+id/switchled2"
+        android:layout_below="@+id/switchled1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/switchled1" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED3"
+        android:id="@+id/switchled3"
+        android:layout_below="@+id/switchled2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/switchled2"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin 23"
+        android:id="@+id/switchPIN23"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/switchBoot"
+        android:layout_alignEnd="@+id/switchBoot" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin 24"
+        android:id="@+id/switchPIN24"
+        android:layout_below="@+id/switchPIN23"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/switchPIN23"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
